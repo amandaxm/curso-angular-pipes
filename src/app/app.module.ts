@@ -9,6 +9,7 @@ import LocalePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { SettingsService } from './settings.service';
 import { FiltroArrayPipe } from './filtro-array.pipe';
+import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
 
 registerLocaleData(LocalePt,'pt');
 @NgModule({
@@ -16,7 +17,8 @@ registerLocaleData(LocalePt,'pt');
     AppComponent,
     ExemplosPipesComponent,
     CamelCasePipe,
-    FiltroArrayPipe
+    FiltroArrayPipe,
+    FiltroArrayImpuroPipe
   ],
   imports: [
     BrowserModule,
