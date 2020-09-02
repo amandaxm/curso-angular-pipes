@@ -1,0 +1,18 @@
+<h5>Exemplos de Pipes</h5>
+<!-- PIPE TRANSFORMA UM VALOR
+alguns pipes embutidos como para mostrar 
+a data formatada
+como usar um pipe "|"" => pipe
+| uppercase transformar titulo em letra maiuscula
+| de number, podemos usar parametros
+'2.1-2' casas decimais
+currency moeda
+-->
+<p>Título: {{ livro.titulo | uppercase }}</p>
+<p>Estrelas: {{ livro.rating | number:'1.1-2' }}</p>
+<p>Páginas: {{ livro.nPaginas | number}}</p>
+<p>Preço: {{ livro.preco | currency:'BRL'}}</p>
+<p>Data Lançamento: {{ livro.dataLancamento | date:'dd-MM-yyyy' }}</p>
+<p>Url: {{ livro.url }}</p>
+<br>
+<p>Livro: {{ livro | json}}</p>
