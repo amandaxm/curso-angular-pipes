@@ -8,7 +8,7 @@ como usar um pipe "|"" => pipe
 '2.1-2' casas decimais
 currency moeda
 -->
-<p>Título: {{ livro.titulo | uppercase }}</p>
+<p>Título: {{ livro.titulo | uppercase | camelCase }}</p>
 <p>Estrelas: {{ livro.rating | number:'1.1-2' }}</p>
 <p>Páginas: {{ livro.nPaginas | number}}</p>
 <p>Preço: {{ livro.preco | currency:'BRL'}}</p>
